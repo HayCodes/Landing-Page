@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: content-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(231, 161, 31);
+}
+
+header{
+    background-color: rgba(37, 37, 226, 0.548);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+}
+.logo {
+    margin: 0 30px;
+}
+.nav-info {
+    align-self: center;
+    margin-right: 30px;
+}
+
+.nav-info a {
+    padding: 0 20px;
+    color: #eee;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.header-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.header-section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.email {
+    width: 270px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.submit {
+    height: 27px;
+    width: 135px;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+/*      FEATURES        */
+
+.feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 17%;
+}
+
+.feature-text h2 {
+    margin-bottom: -10px;
+}
+
+.feature-text p {
+    font-size: 15px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.icon {
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.fa-solid {
+    color: purple;
+    font-size: 40px;
+}
+
+/*   VEDIO SECTION    */
+
+.vid-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+/*    PRICING       */  
+
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 0 40px 0;
+    padding: 10px;
+}
+
+.product {
+    border: solid 1px;
+    width: fit-content;
+    text-align: center;
+    margin: 10px;
+    background: #ffc;
+}
+
+.product h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right , blue, rgb(150, 150, 150), purple);
+    margin-top: 0;
+    width: 320px;
+    height: 40px;
+    color: white;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.product-features {
+    line-height: 2;
+}
+
+.price-submit {
+    width: 33%;
+    height: 40px;
+    margin-bottom: 15px;
+    background-color: purple;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+/*      FOOTER      */
+
+.footer-div {
+    background-color: rgba(37, 37, 226, 0.548);
+    height: 35px;
+    margin: 0px 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    bottom: 0;
+    color: white;
+}
+
+.footer-nav {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    
+}
+.copyright {
+    font-family: monospace;
+}
+
+/*          MEDIA QUERY        */
+
+@media only screen and (max-width: 900px) {
+
+    .nav-text {
+        font-size: 16px;
+        padding: 0 10px;
+        margin-right: 20px;
+    }
+    .brand-img {
+        width: 240px;
+        margin-left: 15px;
+    }
+
+    .header-section h2 {
+        font-size: 20px;
+    }
+    .email {
+        width: 200px;
+        padding: 4px;
+    }
+    .submit {
+        height: 25px;
+        width: 120px;
+    }
+
+    .feature-section {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .feature-text h2 {
+        font-size: 22px;
+    }
+    .feature-text p {
+        font-size: 14px;
+    }
+    .fa-solid {
+        font-size: 35px;
+    }
+
+    .footer-div {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+
+    .nav-text {
+        font-size: 14px;
+        margin-right: 8px;
+        padding: 0 5px;
+    }
+    .brand-img {
+        width: 180px;
+        margin-left: 8px;
+    }
+    .brand-head {
+        padding-top: 10px;
+    }
+
+    .header-section {
+        margin-top: 80px;
+    }
+    .header-section h2 {
+        font-size: 17px;
+    }
+    .email {
+        width: 150px;
+        padding: 2px;
+    }
+    .submit {
+        height: 20px;
+        width: 80px;
+        font-size: 9.7px;
+    }
+
+    .icon {
+        display: none;
+    }
+    .feature {
+        margin: 5px 0;
+    }
+    .feature-section {
+        margin-top: 15px;
+        margin-bottom: 15px; 
+    }
+
+    .vid-section {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    .vid-section iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    .nav-info a{
+        font-size: 12px;
+        margin-right: 10px;
+        padding: 0 2px;
+    }
+    .logo {
+        width: 110px;
+        margin-left: 2px;
+    }
+
+    .header-section {
+        margin-top: 50px;
+    }
+    .header-section h2 {
+        font-size: 12px;
+    }
+    .email {
+        width: 120px;
+        font-size: 9px;
+        margin-bottom: 5px;
+    }
+    .submit {
+        height: 15px;
+        width: 80px;
+        font-size: 9.7px;   
+    }
+
+    .feature-section {
+        margin: 30px 15px;
+    }
+    .feature-text h2 {
+        font-size: 20px;
+    }
+    .feature-text p {
+        font-size: 12px;
+    }
+
+    .pricing-section {
+        margin: 0 0 60px 0;
+    }
+    .product h3 {
+        width: 250px;
+    }
+    .product-features {
+        line-height: 1.5;
+    }
+
+    .footer-div {
+        margin: 0;
+        height: 50px;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .footer-div nav {
+        margin-bottom: 5px;
+    }
+}
